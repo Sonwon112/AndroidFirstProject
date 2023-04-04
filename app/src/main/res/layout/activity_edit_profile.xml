@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/imgBtn"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:background="@drawable/avatar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="10dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint = "이름"
+                android:text="손원일"
+                android:inputType="text"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint = "학교"
+                android:text="연암공과대학교"
+                android:inputType="text"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint = "학과"
+                android:text="스마트소프트웨어학과"
+                android:inputType="text"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="세부사항"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:background="@color/purple_500"/>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:hint = "전화번호"
+            android:text="01076748179"
+            android:inputType="text"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:hint = "email"
+            android:inputType="text"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:hint = "학번"
+            android:inputType="text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="부가사항"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:background="@color/purple_500"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:textSize="25dp"
+            android:inputType="text"
+            android:gravity="top"
+            android:text="github 주소 : https://github.com/Sonwon112"/>
+    </LinearLayout>
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="저장하기"/>
+</LinearLayout>

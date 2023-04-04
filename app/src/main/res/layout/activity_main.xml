@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:background="@color/purple_500"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/imgBtn"
+                android:layout_width="450px"
+                android:layout_height="450px"
+                android:background="@drawable/avatar"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoLink="web|phone|email"
+                android:text=" 이름 : 손원일\n 학교:연암공과대학교\n 학과:스마트소프트웨어학과\n 연락처:01076748179\n github주소:\nhttps://github.com/Sonwon112"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="듣는 강의 목록"
+            android:textColor="@color/white"
+            android:background="@color/purple_500"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/txtClassList1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text = "IoT 실습"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:id="@+id/txtClassList2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text = "Java 기초"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:id="@+id/txtClassList3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text = "Android"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:id="@+id/txtClassList4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text = "React 실습"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:id="@+id/txtClassList5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text = "경영관리개론"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:id="@+id/txtClassList6"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text = "데이터베이스"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text = "JSP"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text = "Spring"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text = "Unity"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text = "게임개발 기초"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text = "MySQL"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text = "서버 프로그램 개발하기"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="프로필 수정하기"/>
+        <Button
+            android:id="@+id/btnEditListenClassList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="듣는 강의목록 수정하기"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
